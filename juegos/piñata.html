@@ -1,0 +1,47 @@
+<html>
+<head>
+	<title>Juego Piñata</title>
+	<meta charset="utf-8">
+	<!-- Css con las posiciones de la piñata -->
+	<link rel="stylesheet" href="css/piñata.css">
+	<link rel="stylesheet" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/piñata.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/piñata.js"></script>
+</head>
+<body>
+	<section id="juego">
+		<!-- Al dar un golpe cambia la posición de la piñata -->
+		<h1 id="indicacion">Golpea la piñata <strong id="golpes">39</strong> veces</h1>
+		<img id="uno" src="imagenes/figuras/piñata.png" onClick="golpe();">
+		<img id="dos" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="tres" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="cuatro" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="cinco" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="seis" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="siete" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="ocho" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="nueve" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="diez" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="once" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="doce" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+		<img id="trece" src="imagenes/figuras/piñata.png" onClick="golpe();" hidden>
+	</section>
+
+	<section id="fin" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<br><br><br>
+		<img class="fiesta" src="imagenes/evaluacion/fiesta.png">
+		<img class="fiesta" src="imagenes/evaluacion/vivaMexico.png">
+		<img class="fiesta" src="imagenes/evaluacion/fiesta.png">
+		<br><br>
+		<img class="fiesta" src="imagenes/evaluacion/dulces.png">
+		<img class="fiesta" src="imagenes/evaluacion/dulces.png">
+	</section>
+</body>
+
+</html>

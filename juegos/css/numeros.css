@@ -1,0 +1,67 @@
+body {
+	font-family: cursive;
+}
+
+select {
+	font-size: 45px;
+	cursor: pointer
+}
+
+option {
+	font-size: 35px;
+	cursor: pointer
+}
+
+img.enemigo {
+	position: relative;
+	width: 95px;
+	height: 100px;
+	margin: 0px;
+	padding: 0;
+}
+
+#nave {
+	position: absolute;
+	width: 75px;
+	height: 100px;
+	bottom: 0px;
+}
+
+#laser {
+	position: absolute;
+	width: 75px;
+	height: 85%;
+	top: 0px;
+}
+
+#sidebar {
+	position: absolute;
+	right: 0px;
+	top: 25px;
+	text-align: right;
+}
+
+#vidas {
+	height: 50px;
+}
+
+#enemigo_ic {
+	height: 70px;
+}
+
+#contador {
+	font-size: 64px;
+}
+
+#inicio {
+	text: aling-center;
+} 
+
+#golpe {
+	background: red;
+	height: 100%;
+	width: 100%;
+	position: absolute;
+	top:0;
+	opacity: 0.7;
+}

@@ -1,0 +1,380 @@
+body {
+	text-align: center;
+	font-size: 32px;
+	font-family: sans-serif;
+	background-color: #f7f7ca;
+	min-width: 620px;
+}
+
+body#juegoNumeros {
+	text-align: left;
+	background-color: #ffffff;	
+}
+
+#juegoNumeros #inicio, #juegoNumeros #final {
+	text-align: center;
+	height: 100%;
+	background-color: #f7f7ca;
+
+}
+
+#juegoAhorcado #animal {
+	height: 250px;
+}
+
+#juegoAhorcado #fin img {
+	width: 30%;
+	margin-top: 7%;
+}
+
+
+#juegoMemorama #img_fin {
+	width: 400px;
+	height: 400px;
+	cursor: pointer;
+}
+
+#memorama img{
+	height: 120px;
+	margin-left: 50px;
+	margin-bottom: 20px;
+	cursor: pointer;
+}
+
+#juegoRelacionar {
+	font-family: cursive;
+} 
+
+#juegoRelacionar h2:first-letter{
+	text-transform: uppercase;
+} 
+
+table {
+	text-align: center;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+h1 {
+	color: #4CAF50; 
+}
+
+h2 {
+	font-size: 44px;
+	margin-bottom: 0px;
+	margin-top: 0px;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+p {
+	font-size:135px;
+	margin: 10px;
+}
+
+input[submit], button, #flecha {
+	cursor: pointer;
+}
+
+#flecha:hover {
+	cursor: pointer;
+	filter: brightness(120%);
+}
+
+
+button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  font-size: 40px;
+  border-radius: 12px;
+  transition-duration: 0.4s;
+  margin 4px;
+}
+
+button:hover {
+  margin 4px;
+  background-color: #45ccdd;
+  color: white;
+  font-size: 45px;
+  text-shadow: 4px 4px #3C9F40; 
+}
+
+#mal {
+	position: absolute;
+top: 5%;
+left: 0;
+right: 0;
+bottom: 0;
+margin: auto;
+}
+
+
+#juegoSumar h1 {
+	font-size: 125px; 
+	display: inline; 
+	color: black;
+}
+
+#juegoSumar button {
+  font-size: 70px;
+}
+
+#juegoSumar boton:hover {
+  font-size: 80px;
+}
+
+#juegoSumar p {
+	font-size:205px;
+	margin: 25px;
+	color: #df43c4;
+	border-radius: 12px;
+	display: inline; 
+}
+
+#juegoSumar input {
+	text-align:center;
+	width: 150px;
+	height: 105px;
+	font-size:125px;
+}
+
+#juegoSilueta #silueta_oculto {
+	width: 350px;
+}
+
+#juegoSilueta #silueta_oculto img {
+	filter: brightness(0%);
+	max-width: 350px;
+	margin-right: 10px;
+}
+
+#juegoSilueta .silueta_opciones {
+	width: 64%;
+	text-align: left;
+	padding-left: 15%;
+}
+
+#juegoSilueta .silueta_opciones img {
+	max-width: 220px;
+	cursor: pointer;
+}
+
+#juegoSilueta .silueta_opciones img:hover {
+	filter: brightness(115%);
+}
+
+#juegoSilueta .medio {
+	position: absolute;
+	right: 10%;
+	top: 40%;
+}
+
+#juegoContar img {
+	max-height: 380px;
+}
+
+#juegoContar #izquierda {
+	margin-right: 40%;
+}
+
+#juegoContar #abajoIzq {
+	margin-right: 20%;	
+}
+
+#juegoLetras input {
+	text-align:center;
+	width: 125px;
+	height: 125px;
+	font-size:125px;
+	text-transform: uppercase;
+}
+
+#juegoVocales #titulo {
+	font-size: 55px;
+}
+
+#juegoVocales #imgBien {
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+
+#juegoVocales img {
+	float: left; 
+	margin-left: 40%;
+	margin-bottom: 3%;
+}
+
+#juegoVocales #izquierda {
+	background-color: red; 
+	margin-right: 50%;
+	padding: 20px 40px;
+}
+
+#juegoVocales #derecha {
+	background-color: blue; 
+	padding: 20px 40px;
+}
+
+#juegoVocales #abajo {
+	background-color: #4CAF50;
+	padding: 20px 40px;
+}
+
+#juegoVocales button:hover {
+	filter: brightness(122%);
+	text-shadow: 2px 2px #7a7a7a;
+	box-shadow: 4px 4px #8a8a8a;
+	cursor: pointer;
+}
+
+#juegoComputadora #intento {
+	width: 5em;
+}
+
+
+#juegoComputadora input {
+	font-size: 80px;
+	border-radius: 7px;
+	padding: 5px;
+	text-transform: uppercase;
+
+}
+
+#juegoComputadora button {
+	left: 140px;
+	bottom: 60px;
+	font-size: 65px;
+	background-color: #5577cd;
+	padding: 10px;
+	border-radius: 10px;
+}
+
+#juegoComputadora img {
+	max-height: 420px;
+	min-height: 280px;
+}
+
+#juegoComputadora label {
+	font-size: 80px;
+}
+
+#juegoSaludable #elegir {
+  min-width: 620px;
+}
+
+#juegoSaludable #tache {
+  margin-right: 50%;
+  cursor: pointer;
+}
+
+#juegoSaludable  #palomita {
+  cursor: pointer;  
+}
+
+#juegoSaludable  #tache:hover {
+  filter: brightness(120%);
+  margin-right: 50%;
+  width: 164px;
+  height: 164px;
+  cursor: pointer;
+}
+
+#juegoSaludable #palomita:hover {
+  filter: brightness(120%);
+  width: 164px;
+  height: 164px;
+  cursor: pointer;  
+}
+
+#juegoInicial #palabra {
+	font-size: 64px;
+	color: black;
+}
+
+#juegoInicial input {
+	text-align:center;
+	width: 120px;
+	height: 90px;
+	font-size:64px;
+	text-transform: uppercase;
+}
+
+#juegoInicial #figura {
+	max-width: 350px;
+	margin-right: 75px;
+}
+
+#juegoRelacionar #uno, #juegoRelacionar #dos, #juegoRelacionar #tres {
+	background-color: #81cfcb;
+	padding: 20px;
+	width: 200px;
+	border-radius: 20px;
+}
+
+#juegoRelacionar #dos {
+	background-color: #cf81cb;
+}
+
+#juegoRelacionar #tres {
+	background-color: #cf7171;
+}
+
+#juegoRelacionar #uno:hover, #juegoRelacionar #dos:hover, #juegoRelacionar #tres:hover {
+	filter: brightness(117%);
+	text-shadow: 2px 2px #bababa;
+	box-shadow: 4px 4px #bababa;
+	cursor: pointer;
+}
+
+#juegoReloj img {
+	position: absolute;
+	top: 0;
+	bottom: 220;
+	right: 0;
+	left: 0;
+	margin: auto;
+}
+
+#juegoReloj #hora {
+	bottom: 20;
+	left: 130;
+	transform: rotate(0deg);
+}
+
+#juegoReloj #minutero {
+	bottom: 220;
+	transform: rotate(-90deg);
+}
+
+#juegoReloj button {
+	position: absolute;
+	top: 200;
+	bottom: 0;
+	right: 200;
+	margin: auto;
+	height: 90px;
+	width: 140px;
+}
+
+#juegoReloj input {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 200;
+	margin: auto;
+	height: 90px;
+	width: 140px;
+	font-size: 72px;
+	text-align: center;
+}
+
+
+#juegoReloj #reloj {
+	top: 210;
+}
+
+

@@ -1,0 +1,45 @@
+<html>
+<head>
+	<title>Juego Silueta</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/silueta.png"/>
+
+	<!-- Script para bloquear clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+	<!-- Script para realizar las funciones del juego -->
+	<script src="js/silueta.js"></script>
+</head>
+<body id="juegoSilueta">
+	<h1 id="indicacion">Descubre la imagen escondida</h1>
+
+	<table id="juego">
+		<td id="silueta_oculto">
+			<!-- La imagen oculta cambia al dar clic en la opción correcta -->
+			<img id="oculto" src="imagenes/figuras/zanahoria.png">
+		</td>
+		<td class="silueta_opciones">
+			<!-- La opciones cambian al dar clic en la opción correcta -->
+			<img id="uno" src="imagenes/figuras/arbol.png" onclick="mal();">
+			<br><br><br>
+               
+			<img id="dos" src="imagenes/figuras/avion.png" class="medio" onclick="mal();">  
+			<br><br><br>
+		
+			<img id="tres" src="imagenes/figuras/zanahoria.png" onclick="bien();">
+		</td>
+	</table>
+
+	<section id="evaluacion">
+		<!-- Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img id="bien" src="imagenes/evaluacion/bien.png" hidden>
+		<img id="mal" src="imagenes/evaluacion/mal.png" hidden>
+	</section>
+
+	<section id="fin" hidden>
+		<!-- Al terminar el juego muestra varias imagenes de celebración -->
+		<img src="imagenes/evaluacion/vivaMexico.png" height="55%">
+		<img src="imagenes/evaluacion/baile.webp" height="55%">
+		<img src="imagenes/evaluacion/vivaMexico.png" height="55%">
+	</section>
+</body>

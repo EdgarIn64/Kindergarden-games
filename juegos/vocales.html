@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego Vocales</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../iconos/vocales.png"/>
+	<link rel="stylesheet" href="css/juegos.css">
+
+	<!-- Script para realizar las funciones del juego -->
+	<script src="js/vocales.js"></script>
+	<!-- Script para bloquear clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+</head>
+<body id="juegoVocales">
+	<h1 id="titulo">Elige la vocal inicial</h1>
+
+
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si lo hizo bien o mal -->
+		<div id="bien" hidden>
+			<h1 id="bueno">BIEN HECHO</h1>
+			<img src="imagenes/evaluacion/palomita.png" style="position: absolute; right: 80px;" height="200px">
+		</div>
+		<div id="mal" hidden="true">
+			<img src="imagenes/evaluacion/tache.png" style="margin: 70px; float:none;">
+		</div>
+	</section>
+
+	<section id="juego">
+		<!--  Los valores de los botones y la imagen cambia al dar clic en la flecha  -->
+
+		<!--  Muestra una imagen cuyo nombre inicia con una vocal  -->
+		<img id="figura" src="imagenes/figuras/arbol.png" width="275px" height="275px">
+		<br><br>
+		<div id="botones">
+			<!--  Botones para decidir con que vocal se cree que comienza la imagen  -->
+			<button id="izquierda" onclick="mal()">O</button>
+			<button id="derecha" onclick="bien()">A</button>
+			<br><br>
+			<button id="centro" onclick="mal()">I</button>
+		</div>
+		<br><br><br><br><br>
+		<!--  Boton para continuar con la siguiente imagen  -->
+		<img id="flecha" onclick = "siguiente()" src="imagenes/evaluacion/flecha.png" height ="100px" hidden>
+	</section>
+
+
+	<section id="fin" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<h1>FELICIDADES</h1>
+		<h2>Terminaste todos los niveles</h2>
+		<img src="imagenes/evaluacion/felicidades.png" height="200px" width="200px" style="display: flex; margin-right: 10px; margin-left: 20%">
+		<img src="imagenes/evaluacion/fiesta.png" height="200px" width="200px" style="display: flex; margin-left: 10px;">
+	</section>
+
+</body>
+</html>

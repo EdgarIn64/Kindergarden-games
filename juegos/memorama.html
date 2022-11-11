@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego Memorama</title>
+	<link rel="icon" type="image/png" href="../iconos/memorama.png"/>
+	<link rel="stylesheet" type="text/css" href="css/juegos.css">
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/memorama.js"></script>
+</head>
+<body id="juegoMemorama" onload="asignar()">
+	<section id="memorama">
+		<!--  Muestra todas las cartas cubiertas por las micas, al tocar una se descubre la imagen de la carta -->
+		<img id="carta1" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica1"  onclick="descubrir(1)">
+
+		<img id="carta2" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica2"  onclick="descubrir(2)">
+
+		<img id="carta3" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica3"  onclick="descubrir(3)">
+
+		<img id="carta4" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica4"  onclick="descubrir(4)">
+
+		<img id="carta5" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica5"  onclick="descubrir(5)">
+		<br><br>
+
+
+		<img id="carta6" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica6"  onclick="descubrir(6)">
+
+		<img id="carta7" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica7"  onclick="descubrir(7)">
+
+		<img id="carta8" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica8"  onclick="descubrir(8)">
+
+		<img id="carta9" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica9"  onclick="descubrir(9)">
+
+		<img id="carta10" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica10"  onclick="descubrir(10)">
+		<br><br>
+	
+
+		<img id="carta11" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica11"  onclick="descubrir(11)">
+
+		<img id="carta12" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica12"  onclick="descubrir(12)">
+
+		<img id="carta13" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica13"  onclick="descubrir(13)">
+
+		<img id="carta14" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica14"  onclick="descubrir(14)">
+
+		<img id="carta15" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica15"  onclick="descubrir(15)">
+		<br><br>
+	
+
+		<img id="carta16" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica16"  onclick="descubrir(16)">
+
+		<img id="carta17" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica17"  onclick="descubrir(17)">
+	
+		<img id="carta18" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica18"  onclick="descubrir(18)">
+	
+		<img id="carta19" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica19"  onclick="descubrir(19)">
+
+		<img id="carta20" hidden>
+		<img src="imagenes/cartas/mica.jpg" id="mica20"  onclick="descubrir(20)">
+	</section>
+
+
+	<section id="siguiente" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<h1>Felicidades</h1>
+		<img id="img_fin" src="imagenes/evaluacion/feliz.png" 
+		onclick="cambiarImg()">
+		<br><br>
+		<!--  Boton para volver a jugar  -->
+		<button onClick="window.location.reload(false);">Volver a Jugar</button>
+		
+	</section>
+
+</body>
+</html>

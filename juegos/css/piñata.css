@@ -1,0 +1,83 @@
+html {
+  cursor: url("../imagenes/figuras/bate.png"), auto;
+  height: 100%;
+}
+
+img {
+  position: absolute;
+  width: 200px;
+  height: 200px;
+  cursor: url("../imagenes/figuras/bate2.png"), auto;
+
+}
+
+img.fiesta {
+   position: relative;
+}
+
+
+img#uno {
+  top: 25%;
+  left: 45%
+}
+
+img#dos {
+  top: 40%;
+  left: 25%
+}
+
+img#tres {
+  top: 57%;
+  left: 7%
+}
+
+img#cuatro {
+  top: 25%;
+  left: 30%
+}
+
+img#cinco {
+  top: 55%;
+  left: 45%
+}
+
+img#seis {
+  top: 64%;
+  left: 64%
+}
+
+img#siete {
+  top: 52%;
+  left: 82%
+}
+
+img#ocho {
+  top: 25%;
+  left: 70%
+}
+
+img#nueve {
+  top: 47%;
+  left: 52%
+}
+
+img#diez {
+  top: 58%;
+  left: 30%
+}
+
+img#once {
+  top: 64%;
+  left: 10%
+}
+
+img#doce {
+  top: 37%;
+  left: 2%
+}
+
+img#trece {
+  top: 42%;
+  left: 30%
+}
+

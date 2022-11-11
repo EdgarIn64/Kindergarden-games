@@ -1,0 +1,38 @@
+<html>
+<head>
+	<title>Juego Saludable</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/saludable.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  funciones principales del juego -->
+	<script src="js/saludable.js"></script>
+</head>
+<body id="juegoSaludable">
+	<h1 id="indicacion">¿Esta comida es saludable?</h1>
+    
+	<section id="juego">
+		<!--  La siguiente imagen cambiara con el js al pulsar el tache o la palomita  -->
+		<img src="imagenes/figuras/platano.png" id="comida" width="380px" height ="380px">
+		<br><br><br>
+		<!--  Llama a una funcion para que evalue el intento  -->
+		<img src="imagenes/evaluacion/tache.png" id="tache" width="150px" height="150px" onClick="btnTache();">
+		<img src="imagenes/evaluacion/palomita.png" id="palomita" width="150px" height="150px" onClick="btnPalomita();">
+	</section>
+
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si acerto o se equivoco  -->
+        	<img src="imagenes/evaluacion/bien.png" id="bien" width="350px" height ="350px" hidden>
+		<img src="imagenes/evaluacion/mal.png" id="mal" width="300px" height ="300px" hidden>
+	</section>
+
+	<section id="fin" hidden>
+		<!--  Felicitación al terminar el juego  -->
+		<h1>FELICIDADES</h1>
+		<img src="imagenes/evaluacion/felicidades.png" id="felicidades" width="500px" height ="500px">
+	</section>
+</body>
+</html>

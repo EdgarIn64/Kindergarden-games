@@ -1,0 +1,53 @@
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Juego Iniciales</title>
+	<link rel="stylesheet" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/inicial.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/inicial.js"></script>
+
+	<!--  se llama a una libreria angular para activar eventos con el teclado  -->
+	<script src="../js/detectarTeclado.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body id="juegoInicial" onkeypress="tecla(event)">
+	<h1 id="indicacion">Escribe la letra inicial</h1>
+
+	<table id="juego">
+		<!--  En esta seccion estan las partes mas importantes del juego  -->
+		<td>
+			<!--  Muestra una imagen -->
+        		<img id="figura" src="imagenes/figuras/gato.png" style="max-width: 350px">
+		</td>
+		<td>
+			<!--  Muestra el nombre de la imagen -->
+			<h1 id="palabra">GATO</h1>
+
+			<!--  Boton donde se escribe la inicial del nombre de la imagen -->
+			<input type="txt" id="intento" maxlength="1"> 
+
+			<!-- Si se escribio bien la inicial se cambiara la palabra y la imagen -->
+			<button id="boton" onclick="evaluar()"> ? </button>
+		</td>
+	</table>
+
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img id="mal" src="imagenes/evaluacion/mal.png" hidden>
+		<img id="bien" src="imagenes/evaluacion/bien.png" hidden>
+	</section>
+
+	<section id="fin" hidden> 
+		<!--  Felicitación por terminar el juego  -->
+		<h1>FELICIDADES</h1>
+		<img src="imagenes/evaluacion/robot.png" height="50%">
+		<img src="imagenes/evaluacion/felicidades.png" height="50%">
+		<img src="imagenes/evaluacion/vivaMexico.png" height="50%">
+	</section>
+</body>
+</html>

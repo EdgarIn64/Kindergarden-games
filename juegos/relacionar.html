@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Juego Relacionar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/relacionar.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/relacionar.js"></script>
+</head>
+<body id="juegoRelacionar">
+	<h1 id="indicacion">Escribe la letra inicial</h1>
+
+	<table id="juego" style="width: 55%;">
+		<td style="width: 40%;">
+			<!--  Cambia la figura despues de elegir la opción correcta  -->
+			<img id="figura" src="imagenes/figuras/elefante.png" style="max-width: 350px">
+		</td>
+		<td>
+			<!--  Cambian las opciones despues de elegir la opción correcta  -->
+			<h2 id="uno" onclick="mal()">Serpiente</h2>
+			<br><br><br>
+			<h2 id="dos" onclick="bien()">Elefante</h2>
+			<br><br><br>
+			<h2 id="tres" onclick="mal()">Abanico</h2>
+		</td>
+	</table>
+
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img src="imagenes/evaluacion/bien.png" id="bien" hidden>
+		<img src="imagenes/evaluacion/mal.png" id="mal" hidden>
+	</section>
+
+	<section id="fin" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<h1>FELICIDADES</h1>
+		<img src="imagenes/evaluacion/robot.png" height="50%">
+		<img src="imagenes/evaluacion/felicidades.png" height="50%">
+		<img src="imagenes/evaluacion/vivaMexico.png" height="50%">
+	</section>
+</body>
+</html>

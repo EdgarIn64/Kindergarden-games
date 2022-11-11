@@ -1,0 +1,81 @@
+<html>
+<head>
+	<title>Number Invaders</title>
+	<meta charset="utf-8">
+	<link rel="icon" type="image/png" href="../iconos/nave.png"/>
+	<link rel="stylesheet" type="text/css" href="css/juegos.css">
+	<link rel="stylesheet" type="text/css" href="css/numeros.css">
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/numeros.js"></script>
+
+	<!--  se llama a una libreria angular para activar eventos con el teclado  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</head>
+<body id="juegoNumeros" onkeypress="atacar(event)">
+	<section id="inicio">		
+		<!--  Pantalla de bienvenida -->
+		<h1>BIENVENIDO A NUMBER INVADERS</h1>
+		<h2>Utiliza los numeros del teclado para eleminar a los enemigos</h2><br>
+		<img src="imagenes/numberInvaders.png" height=50%><br><br>
+
+		<!--  Boton para iniciar juego -->
+		<button onClick="iniciar();">INICIAR JUEGO</button>
+
+		<!--  Selector de dificultad  -->
+		<select id="dificultad">
+			<option value="9">Facil</option>
+			<option value="7" selected>Normal</option>
+			<option value="4">Dificil</option>
+			<option value="2">Muy Dificil</option>
+			<option value="1">Imposible</option>
+		</select>
+	</section>
+
+	<section id="sidebar" hidden>
+		<!--  Muestra el progreso del juego -->
+		<img id="vidas" src="imagenes/evaluacion/vidas_5.png"><br><br>
+		<img id="enemigo_ic" src="imagenes/figuras/enemigo.png">
+		<label id="contador">X50</label>
+	</section>
+
+	<section id="juego" hidden>
+		<!--  Los enemigos del juego son los numeros de un digito  -->
+		<img id="uno" class="enemigo" src="imagenes/cartas/1.jpg">
+		<img id="dos" class="enemigo" src="imagenes/cartas/2.jpg">
+		<img id="tres" class="enemigo" src="imagenes/cartas/3.jpg">
+		<img id="cuatro" class="enemigo" src="imagenes/cartas/4.jpg">
+		<img id="cinco" class="enemigo" src="imagenes/cartas/5.jpg">
+		<img id="seis" class="enemigo" src="imagenes/cartas/6.jpg">
+		<img id="siete" class="enemigo" src="imagenes/cartas/7.jpg">
+		<img id="ocho" class="enemigo" src="imagenes/cartas/8.jpg">
+		<img id="nueve" class="enemigo" src="imagenes/cartas/9.jpg">
+
+		<br>
+		<!--  Rayo laser que dispara la nave  -->
+		<img id="laser" src="imagenes/figuras/laser.png" hidden>
+		<!--  Nave que controla el jugador  -->
+		<img id="nave" src="imagenes/figuras/nave.png">
+	</section>
+
+	<section id="final" hidden>
+		<!--  Muestra una pantalla de victoria o fracaso -->
+		<div id="victoria" hidden>
+			<h1>VICTORIA</h1>
+			<img src="imagenes/evaluacion/baile.webp" width=28%>
+			<img src="imagenes/evaluacion/feliz.png" width=28%>
+		</div>
+
+		<div id="fracaso" hidden>
+			<h1>FRACASO</h1>
+			<img src="imagenes/evaluacion/enojado.png">
+			<img src="imagenes/evaluacion/tache.png" width=200px height=200px>
+		</div>
+		<br><br>
+		<button onClick="window.location.reload(false);">Volver a juegar</button>
+	</section>
+</body>
+</html>

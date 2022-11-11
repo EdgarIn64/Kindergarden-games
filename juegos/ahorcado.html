@@ -1,0 +1,36 @@
+<html>
+<header>
+	<title>Juego ahorcado</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/juegos.css">
+
+	<!-- Script para realizar las funciones del juego -->
+	<script src="js/ahorcado.js"></script>
+	<!-- Script para bloquear clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  Llama a una libreria angular para activar eventos con el teclado  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+</header>
+<body id="juegoAhorcado" onkeypress="intentar(event)">
+	<h1 id="indicacion">RATON</h1>
+
+	<section id="evaluacion" hidden>
+		<img id="bien" src="imagenes/evaluacion/bien.png">
+		<img id="mal" src="imagenes/evaluacion/mal.png">
+	</section>
+
+	<section id="juego">
+		<img id="animal" src="imagenes/figuras/raton.png">
+		<p id="animalNombre">_ _ _ _ _</p>
+		
+	</section>
+
+	<section id="fin" hidden>
+		<img src="imagenes/evaluacion/fiesta.png">
+		<img src="imagenes/evaluacion/feliz.png">
+		<img src="imagenes/evaluacion/fiesta.png">
+	</section>
+
+</body>
+</html>

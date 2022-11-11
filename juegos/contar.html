@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Juego contar</title>
+	<link rel="stylesheet" type="text/css" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/contar.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/contar.js"></script>
+</head>
+<body id="juegoContar">
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img id="mal" src="imagenes/evaluacion/tache.png" hidden>
+		<img id="bien" src="imagenes/evaluacion/feliz.png" hidden>
+	</section>
+
+	<section id="juego">
+		<!--  En esta seccion estan las partes mas importantes del juego  -->
+		<h1 id="indicacion">Cuenta el número de ratones</h1>
+
+
+		<!--  Se muestra una imagen para contar las figuras que hay dentro  -->
+		<img id="figura" src="imagenes/multiples/5_ratones.png">
+		<br><br>
+
+		<!--  Botones para evaluar cuantos figuras hay en la imagen  -->
+		<button id="izquierda" onclick="evaluar('izquierda')">4</button>
+		<button id="derecha" onclick="evaluar('derecha')">5</button>
+		<br><br>
+		<button id="abajoIzq" onclick="evaluar('abajoIzq')">2</button>
+		<button id="abajoDer" onclick="evaluar('abajoDer')">8</button>
+	</section>
+
+	<section id="fin" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<h1>Terminaste</h1>
+		<h1>Felicidades</h1>
+		<img src="imagenes/evaluacion/fiesta.png">
+		<img src="imagenes/evaluacion/robot.png">
+		<img src="imagenes/evaluacion/fiesta.png">
+	</section>
+</body>
+</html>

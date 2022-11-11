@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Computadora</title>
+	<link rel="stylesheet" type="text/css" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/computadora.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/computadora.js"></script>
+
+	<!--  Llama a una libreria angular para activar eventos con el teclado  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../js/detectarTeclado.js"></script>
+</head>
+<body id="juegoComputadora" onkeypress="texto(event)">
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img src="imagenes/evaluacion/bien.png" id="bien" hidden>
+		<img src="imagenes/evaluacion/mal.png" id="mal" hidden>
+	</section>
+
+	<section id="juego">
+		<h1>Escribe las partes de la computadora</h1>
+
+		<!--  La imagen cambia al escribir bien el nombre y dar clic en Evaluar -->
+		<img id="parte" src="imagenes/figuras/monitor.png">
+		<br>
+
+		<!--  El mensaje cambia al escribir bien el nombre y dar clic en Evaluar -->
+		<label id="mensaje">MONITOR</label>
+		<br>
+		<input type="text" id="intento" onkeypress="antiClonar()" required maxlength="7">
+		<button onclick="evaluar();">Evaluar</button>
+	</section>
+
+	<section id="fin" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<h1>FELICIDADES</h1>
+		<img src="imagenes/evaluacion/robot.png">
+	</section>
+</body>
+</html>

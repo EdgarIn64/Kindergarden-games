@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Juego Sumar</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/sumar.png"/>
+
+	<!-- Script para bloquear clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+	<!-- Script para realizar las funciones del juego -->
+	<script src="js/sumar.js"></script>
+</head>
+<body id="juegoSumar">
+	<section id="evaluacion">
+		<!-- Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img src="imagenes/evaluacion/bien.png" id="bien" hidden>
+		<img src="imagenes/evaluacion/tache.png" id="mal" hidden>
+	<section>
+	
+	<section id="juego">
+		<section id="uno">
+			<img src="imagenes/multiples/5_lapices.png" width="30%">
+			<img src="../iconos/sumar.png" width="11%" style="margin:64px;">
+			<img src="imagenes/multiples/3_lapices.png" width="30%">
+			<br><br>
+			<h1>5 + 3 = 
+				<input type="text" id="r1" maxlength=2></input>
+			</h1>
+			<button class="boton" id="btnR1" onclick="uno()">Probar</button>
+		</section>
+
+		<section id="dos" hidden>
+			<img src="imagenes/multiples/5_naranjas.png" width="30%">
+			<img src="../iconos/sumar.png" width="11%" style="margin:64px;">
+			<img src="imagenes/multiples/5_naranjas2.png" width="30%">
+			<br><br>
+			<h1>5 + 5 = 
+				<input type="text" id="r2" maxlength=2></input>
+			</h1>
+			<button class="boton" id="btnR3" onclick="dos()">Probar</button>
+		</section>
+
+		<section id="tres" hidden>
+			<img src="imagenes/multiples/3_pinguinos.png" width="30%">
+			<img src="../iconos/sumar.png" width="11%" style="margin:64px;">
+			<img src="imagenes/multiples/6_pinguinos.png" width="30%">
+			<br><br>
+			<h1>6 + 3 = 
+				<input type="text" id="r3" maxlength=2></input>
+			</h1>
+			<button class="boton" id="btnR3" onclick="tres()">Probar</button>
+		</section>
+
+		<section id="cuatro" hidden>
+			<img src="imagenes/multiples/5_robots.png" width="30%">
+			<img src="../iconos/sumar.png" width="11%" style="margin:64px;">
+			<img src="imagenes/multiples/6_robots.png" width="30%">
+			<br><br>
+			<h1>5 + 6 = 
+				<input type="text" id="r4" maxlength=2></input>
+			</h1>
+			<button class="boton" id="btnR4" onclick="cuatro()">Probar</button>
+		</section>
+
+		<section id="cinco" hidden>
+			<img src="imagenes/multiples/4_yoyos.png" width="30%">
+			<img src="../iconos/sumar.png" width="11%" style="margin:64px;">
+			<img src="imagenes/multiples/4_yoyos.png" width="30%">
+			<br><br>
+			<h1>4 + 4 = 
+				<input type="text" id="r5" maxlength=2></input>
+			</h1>
+			<button class="boton" id="btnR5" onclick="cinco()">Probar</button>
+		</section>
+	</section>
+
+	<section id="fin" hidden>
+		<!-- Al terminar el juego muestra varias imagenes de celebración -->
+		<img src="imagenes/evaluacion/bien.png">
+		<img src="imagenes/evaluacion/festejo.gif">
+	</section>
+</body>
+</html>

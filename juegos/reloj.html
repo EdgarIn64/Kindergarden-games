@@ -1,0 +1,46 @@
+<html>
+<head>
+	<title>Juego Reloj</title>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="css/juegos.css">
+	<link rel="icon" type="image/png" href="../iconos/reloj.png"/>
+
+	<!--  bloqueo.js deshabilita el clic derecho -->
+	<script src="../js/bloqueo.js"></script>
+
+	<!--  js principal para que el juego funcione -->
+	<script src="js/reloj.js"></script>
+
+	<!--  Llama a una libreria angular para activar eventos con el teclado  -->
+	<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+	<script src="../js/detectarTeclado.js"></script>
+</head>
+<body onkeypress="texto(event)">
+	<section id="juegoReloj">
+		<h1 id="indicacion">Escribe la hora</h1>
+		<img src="imagenes/figuras/reloj.png" id="reloj" height="450px">
+
+		<!--  La posicion de la flecha cambia despues de escribir bien la hora -->
+		<img src="imagenes/figuras/flecha.png" id="minutero" height="140px" width="200px">
+		<img src="imagenes/figuras/flecha.png" id="hora" height="140px" width="130px">
+		<br><br>
+		<input type="txt" id="intento" maxlength="2" onkeypress="antiClonar()">
+		<!-- Evalua y si esta bien cambia la hora --> 
+		<button id="boton" onclick="evaluar()">?</button>
+	</section>
+
+	<section id="evaluacion">
+		<!--  Muestra una imagen para indicar si lo hizo bien o mal -->
+		<img src="imagenes/evaluacion/bien.png" id="bien" height="450px" hidden>
+		<img src="imagenes/evaluacion/mal.png" id="mal" height="450px" hidden>
+	</section>	
+
+	<section id="fin" hidden>
+		<!--  Felicitación por terminar el juego  -->
+		<h1>FELICIDADES</h1>
+		<img src="imagenes/evaluacion/felicidades.png" height="400px"> 
+		<img src="imagenes/evaluacion/fiesta.png" height="400px">
+		<img src="imagenes/evaluacion/baile.webp" height="400px">
+	</section>
+</body>
+</html>
